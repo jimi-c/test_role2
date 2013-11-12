@@ -10,4 +10,5 @@ galaxy_info:
     - all
   categories:
   - cloud
-dependencies: []
+dependencies:
+  - {role: admin.test_role, galaxy: true}
