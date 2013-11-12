@@ -1,0 +1,9 @@
+---
+- name: "I'm a {{ type }}"
+  command: echo 'foo = {{ foo }} and testing = {{ testing }}'
+  notify: test handler
+  tags:
+  - car
+
+- template: src=testing.j2 dest=/tmp/car_testing
+  when: undef_var is defined

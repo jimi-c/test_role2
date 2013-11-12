@@ -1,0 +1,2 @@
+- name: test handler
+  debug: msg="handled {{ type|default('undef') }}!"
